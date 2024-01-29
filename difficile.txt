@@ -1,0 +1,11 @@
+vert,2,0,0,V
+rouge,2,0,2,H
+orange,2,1,1,H
+rose,2,2,2,V
+vert,2,2,4,V
+jaune,3,3,0,H
+bleu,2,3,1,V
+mauve,2,3,3,H
+noir,2,3,4,H
+bleu,3,3,5,H
+vert,3,5,2,V
