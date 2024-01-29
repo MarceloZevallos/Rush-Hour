@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #00319C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <top>
+      <BorderPane prefHeight="250.0" prefWidth="1500.0" BorderPane.alignment="TOP_CENTER">
+         <top>
+            <ImageView fitHeight="200.0" fitWidth="600.0" BorderPane.alignment="BOTTOM_CENTER">
+               <image>
+                  <Image url="@../../logo.gif" />
+               </image>
+            </ImageView>
+         </top>
+      </BorderPane>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="389.6000122070312" minHeight="10.0" prefHeight="389.6000122070312" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="214.4" minHeight="10.0" prefHeight="55.199987792968784" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane onMouseClicked="#Facile" onMouseEntered="#Facile" onMouseExited="#Facile" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView scaleX="1.8" scaleY="1.8" scaleZ="1.8">
+                     <image>
+                        <Image url="@../../mini_facile.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="rectFacile" arcHeight="5.0" arcWidth="5.0" fill="#ff21211a" height="280.0" stroke="TRANSPARENT" strokeType="INSIDE" width="260.0" />
+                  <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="500.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0">
+                           <StackPane.margin>
+                              <Insets left="7.0" top="7.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+                        <Label alignment="CENTER" ellipsisString="" text="Facile" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="33.0" />
+                           </font>
+                           <padding>
+                              <Insets left="9.0" top="1.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER" ellipsisString="" text="Facile" textAlignment="CENTER" textFill="#eaff00">
+                           <font>
+                              <Font name="Arial Bold" size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="350.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </StackPane>
+            <StackPane onDragEntered="#Moyen" onDragExited="#Moyen" onMouseClicked="#Moyen" onMouseEntered="#Moyen" onMouseExited="#Moyen" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView scaleX="1.8" scaleY="1.8" scaleZ="1.8">
+                     <image>
+                        <Image url="@../../mini_moyen.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="rectMoyen" arcHeight="5.0" arcWidth="5.0" fill="#ff21211a" height="280.0" onMouseEntered="#Moyen" onMouseExited="#Moyen" stroke="TRANSPARENT" strokeType="INSIDE" width="260.0" />
+                  <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="500.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0">
+                           <StackPane.margin>
+                              <Insets left="7.0" top="7.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+                        <Label alignment="CENTER" ellipsisString="" text="Moyen" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="33.0" />
+                           </font>
+                           <padding>
+                              <Insets left="9.0" top="1.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER" ellipsisString="" text="Moyen" textAlignment="CENTER" textFill="#eaff00">
+                           <font>
+                              <Font name="Arial Bold" size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="350.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </StackPane>
+            <StackPane onDragEntered="#Difficile" onDragExited="#Difficile" onMouseClicked="#Difficile" onMouseEntered="#Difficile" onMouseExited="#Difficile" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <ImageView scaleX="1.8" scaleY="1.8" scaleZ="1.8">
+                     <image>
+                        <Image url="@../../mini_diff.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="rectDifficile" arcHeight="5.0" arcWidth="5.0" fill="#ff21211a" height="280.0" onMouseEntered="#Difficile" onMouseExited="#Difficile" stroke="TRANSPARENT" strokeType="INSIDE" width="260.0" />
+                  <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="500.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0">
+                           <StackPane.margin>
+                              <Insets left="7.0" top="7.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+                        <Label alignment="CENTER" ellipsisString="" text="Difficile" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="33.0" />
+                           </font>
+                           <padding>
+                              <Insets left="9.0" top="1.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER" ellipsisString="" text="Difficile" textAlignment="CENTER" textFill="#eaff00">
+                           <font>
+                              <Font name="Arial Bold" size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="350.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <StackPane onMouseClicked="#quitter" prefHeight="71.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <StackPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="50.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Label alignment="CENTER" ellipsisString="" text="QUITTER" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="33.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" ellipsisString="" text="QUITTER" textAlignment="CENTER" textFill="#eaff00">
+               <font>
+                  <Font name="Arial Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </StackPane>
+   </bottom>
+</BorderPane>
